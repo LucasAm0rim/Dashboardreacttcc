@@ -24,7 +24,7 @@ const Home = () => {
             <Chart/>
           </div>
           <div className="listContainer">
-            <div className="listTitle">Últimas Transações</div>
+            <div className="listTitle">Lista</div>
             <Table/>
           </div>
         </div>

@@ -19,7 +19,7 @@ const Sidebar = () => {
             <span className='logo'>logo</span>
         </div>
         <hr/>
-        <div className='center'>list
+        <div className='center'>
             <ul>
                 <p className="title">HOME</p>
                 <li>
