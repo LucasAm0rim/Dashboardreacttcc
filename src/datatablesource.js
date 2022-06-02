@@ -25,6 +25,11 @@ export const userColumns = [
    {
     field: "status", headerName: "Status",
     width:100,
+    renderCell:(params)=>{
+        return (
+            <div className={`cellWithStatus ${params.row.status}`}>{params.row.status}</div>
+        )
+    }
    },
  
 ];
@@ -34,7 +39,7 @@ export const userRows = [
         id: 1,
         username: "Bátima",
         img:"https://cdn-icons-png.flaticon.com/512/1674/1674291.png",
-        status: "active",
+        status: "ativo",
         email: "1snow@gmail.com",
         age: 35,
     },
@@ -42,7 +47,7 @@ export const userRows = [
         id: 2,
         username: "Robert Pattinson",
         img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSxm7MNg749jSlHhoGyMHD6NfcjS_6fZRnqg&usqp=CAU",
-        status: "active",
+        status: "pendente",
         email: "1snow@gmail.com",
         age: 35,
     },
@@ -50,7 +55,7 @@ export const userRows = [
         id: 3,
         username: "Pebas",
         img:"https://placardoesporte.com.br/foto/competicao_logo-29-14.jpg",
-        status: "active",
+        status: "ativo",
         email: "1snow@gmail.com",
         age: 35,
     },
@@ -58,7 +63,7 @@ export const userRows = [
         id: 4,
         username: "Carlinhos Brown",
         img:"https://s2.glbimg.com/IPMa0Qibs44L4xCuZtKzu0kiGIc=/smart/e.glbimg.com/og/ed/f/original/2021/06/03/carlinhos-brown-1.jpeg",
-        status: "active",
+        status: "ativo",
         email: "1snow@gmail.com",
         age: 35,
     },
@@ -66,15 +71,15 @@ export const userRows = [
         id: 5,
         username: "Vengeance",
         img:"https://www.looper.com/img/gallery/what-happens-if-you-go-to-the-riddlers-website-from-the-batman/intro-1646159711.webp",
-        status: "active",
+        status: "ativo",
         email: "1snow@gmail.com",
         age: 35,
     },
     {
         id: 6,
-        username: "How about another joke?",
-        img:"https://i.pinimg.com/564x/a4/37/64/a4376482136b73b466ef4815217c7406.jpg",
-        status: "active",
+        username: "NetBenas",
+        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Apache_NetBeans_Logo.svg/1776px-Apache_NetBeans_Logo.svg.png",
+        status: "ativo",
         email: "1snow@gmail.com",
         age: 35,
     },
